@@ -1,0 +1,30 @@
+{
+  "name": "sedona-full-pack",
+  "version": "1.0.0",
+  "description": "proget",
+  "main": "Gruntfile.js",
+  "preferGlobal": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "grunt build",
+    "start" : "npm run build && grunt serve"
+  },
+  "author": "alte0",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-css-mqpacker": "^3.0.1",
+    "grunt-csso": "^2.0.1",
+    "grunt-postcss": "^0.8.0",
+    "grunt-svgmin": "^3.3.0",
+    "grunt-svgstore": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}
