@@ -131,7 +131,7 @@ module.exports = function(grunt) {
   });
 
     grunt.registerTask("serve", ["watch"]);
-    grunt.registerTask("symbols", ["svgmin", "svgstore"]);
+    grunt.registerTask("symbols", ["svgmin"]);
     grunt.registerTask("build", [
       "clean",
       "copy",
