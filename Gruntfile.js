@@ -59,29 +59,6 @@ module.exports = function(grunt) {
       }
     },
 
-    //собираем svg срайт
-    svgstore: {
-      options: {
-        svg: {
-          //прячем инлайн svg из html
-          style: "display: none"
-        }
-      },
-      //название конфига
-      symbols: {
-        files: {
-          "build/img/symbols.svg" : ["img/icons/*.svg"]
-        },
-        options: {
-        prefix : 'icon-', // This will prefix each ID
-        svg: { // will add and overide the the default xmlns="http://www.w3.org/2000/svg" attribute to the resulting SVG
-          viewBox : '0 0 100 100',
-          xmlns: 'http://www.w3.org/2000/svg'
-        }
-      }
-      }
-    },
-
     //минифицируем svg
     svgmin: {
       symbols: {
