@@ -1,0 +1,6 @@
+- var menuList = [{name:"Football", link:"#1"}, {name:"Basketball", link:"#2"}, {name:"Baseball", link:"#3"}, {name:"Soccer", link:"#4"}, {name:"Ice hockey", link:"#5"}];
+
+nav.main-navigation
+	ul.list-games
+		each item in menuList
+			li.item-game: a.link(href="" + item.link ) #{item.name}

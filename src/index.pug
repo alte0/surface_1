@@ -1,0 +1,67 @@
+extends templates/layout
+//- не забыть про отступ
+block content
+	section.athlets
+	.container
+		h2.title Athlets
+		.feature-column
+			h3.feature-column__title Connection
+			p.feature-column__text Connect with coaches directly, you can ping coaches to view profile.
+	.feature-column.feature-column--darkish-white
+		.container
+			h3.feature-column__title Collaboration
+			p.feature-column__text
+				| Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.
+	.feature-column.feature-column--purple
+		.container
+			h3.feature-column__title Growth
+			p.feature-column__text
+				| Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc.
+	// end athlets
+	section.players
+		.container
+			h2.title Players
+			.feature-column
+				h3.feature-column__title Connection
+				p.feature-column__text
+					| Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.
+		.feature-column.feature-column--darkish-white
+			.container
+				h3.feature-column__title Collaboration
+				p.feature-column__text Work with recruiter to increase your chances of findingtalented athlete.
+		.feature-column.feature-column--purple
+			.container
+				h3.feature-column__title Growth
+				p.feature-column__text Save your time, recruit proper athlets for your team.
+	// end players
+	section.be-active
+		.wraper-img
+			picture
+				source(media='(min-width: 768px)', srcset='img/photo-be_active-tablet.jpg')
+				img(src='img/photo-be_active-mobile.jpg', alt='Be active')
+		.be-active__text
+			.container
+				h3 Be active
+				p Post videos with your skills, Like and follow others to be more popular.
+	// end Be active
+	section.find-contact
+		.wraper-img
+			picture
+				source(media='(min-width: 768px)', srcset='img/photo-find_contact-tablet.jpg')
+				img(src='img/photo-find_contact-mobile.jpg', alt='Find contact')
+		.find-contact__text
+			.container
+				h3 Find contact
+				p Contact others to find right coach or athlete you are looking for.
+	// end Find contact
+	section.work-it
+		.wraper-img
+			picture
+				source(media='(min-width: 768px)', srcset='img/photo-work_it-tablet.jpg')
+				img(src='img/photo-work_it-mobile.jpg', alt='Work it')
+		.work-it__text
+			.container
+				h3 Work it
+				p
+					| Enjoy being a student athelete, the recruiting process can be overwheelming, we want to make this a enjoyable
+	// end Work it
