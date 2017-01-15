@@ -1,73 +1,129 @@
 .page-header
 	color: white
-	background $bg-color-header url('../img/bg-header.jpg') center top no-repeat
-	background-size cover
+	background  url('../img/bg-header-middle-mobile.png') 48% 44% / auto no-repeat,
+							url('../img/bg-header.jpg') center top / cover no-repeat $bg-color-header
 	padding-top 39px
 	@media (min-width 768px)
-		padding-top 54px
-		// background-size contain
+		padding-top 52px
+		background  url('../img/bg-header-middle-tablet.png') 50% 35% / auto no-repeat,
+								url('../img/bg-header.jpg') center top / cover no-repeat $bg-color-header
+	@media (min-width 1561px)
+		background  url('../img/bg-header-middle-tablet.png') 35% 46% / auto no-repeat,
+								url('../img/bg-header.jpg') center top / cover no-repeat $bg-color-header
 	.container
 		display: flex
 		flex-direction: column
 
+.logo img 
+	display block
+@media (min-width 768px)
+	.logo
+		margin-left: -13px;
+@media (min-width 1561px)
+	.logo
+			margin-left: 0px;
 .header-top
 	display: flex
 	flex-direction: row
 	justify-content: center
-	margin-bottom 135px
+	margin-bottom 134px
 	@media (min-width 768px)
 		justify-content: space-between
+		margin-bottom: 178px
+	@media (min-width 1561px)
+		margin-bottom: 301px
 		
 .comment
 	display: none
+	line-height: 33px
 	@media (min-width 768px)
 		display: block
 
 .header-middle
-	max-width: 330px
+	display flex
+	flex-direction column
+	// max-width: 320px
 	// margin: 0 auto
 	margin-bottom 111px
+	position relative
+	@media (min-width 540px)
+		// width: 500px
+		width: 70%
+		margin-left auto
+		margin-right auto
 	@media (min-width 768px)
-		max-width: 600px
-	@media (min-width 1024px)
-		max-width: 100%
+		// width: 547px
+		width: 55%
+		margin-bottom: 161px;
+	@media (min-width 1075px)
+		// width: 1075px
+		width: 75%
+	@media (min-width 1561px)
+		width: 100%
+		margin-bottom: 15px;
 	&__text
 		margin: 0px
-		font-size: 32px
-		line-height: 47px
+		font-size: 30px
+		line-height: 37px
 		text-transform: uppercase
 		@media (min-width 768px)
-			font-size: 64px
-			line-height: 81px
-		&:first-child
+			font-size: 60px
+			line-height: 78px
+		@media (min-width 1561px)
+			font-size: 85px
+			line-height: 85px
+		&:nth-child(1)
+			align-self: flex-start
+			margin-bottom: 15px;
 			transform: translateX(-9px)
-		&:last-child
-			// transform: translateX(48px)
+			@media (min-width 768px)
+				margin-bottom: 0px;
+				transform: translateX(0px)
+			@media (min-width 1561px)
+				margin-bottom: 7px;
+		&:nth-child(2)
+			align-self: flex-end
+			transform: translateX(9px)
+			// max-width: 225px
+			width: 80%
+			@media (min-width 394px)
+				// max-width: 100%
+			@media (min-width 768px)
+				transform: translateX(0px)
+				// max-width: 450px
+				width: 90%
+			@media (min-width 885px)
+				// @media (min-width 1561px)
+				// 	max-width: 100%
 
-.wraper-buttons
-	display: flex
-	flex-direction: row
-	justify-content: center
-	margin-bottom 45px
-	
+
 .btn-download-app
 	color: white
 	text-decoration: none
 	text-transform: uppercase
 	font-size: 8px
-	line-height: 10px;
-	padding: 11px 17px 10px 40px
+	line-height: 10px
+	display inline-block
+	// width: 142px
+	padding: 10px 19px 9px 45px
 	background-color: $btn-download-app-color
 	border-radius 20px
+	box-shadow: 0 10px 16px 0 #0a0d35
 	&__apple 
+		margin-left -15px
 		margin-right 8px
 		position: relative
+		@media (min-width 768px)
+			margin-right 31px
+			margin-left 0px
+		@media (min-width 1561px)
+			margin-right 50px
 		&:before
 			position absolute
 			content ''
 			top 0
 			bottom 0
-			left 15px
+			left 20px
 			margin auto
 			background: url("../img/sprite.png") 0 0;
 			width: 15px;
@@ -76,17 +132,19 @@
 				background: url("../img/sprite.png") 0 -17px;
 				width: 33px;
 				height: 37px;
-			
+				left 43px
 	&__google
-		padding-left 49px
-		padding-right 30px
+		margin-right -15px
+		padding-left 55px
+		padding-right 34px
 		position: relative
+			
 		&:before
 			position absolute
 			content ''
 			top 0
 			bottom 0
-			left 20px
+			left 30px
 			margin auto
 			background: url("../img/sprite.png") 0 -314px;
 			width: 16px
@@ -95,7 +153,36 @@
 				background: url("../img/sprite.png") 0 -332px;
 				width: 36px
 				height: 39px
+				left 63px
+				
+	@media (min-width 768px)
+		padding: 24px 70px 21px 105px
+		font-size: 14px
+		line-height: 16px
+		border-radius 40px
+		box-shadow: 10px 16px 24px 0 #0a0d35
+	&__google
+		@media (min-width 768px)
+			padding-left 126px
+			padding-right 85px
+			margin-right 0px
+	@media (min-width 1561px)
+		box-shadow: 0 16px 24px 0 #0a0d35
+
+.wraper-buttons
+	display: flex
+	flex-direction: row
+	justify-content: center
+	margin-bottom 40px
+	@media (min-width 768px)
+		order: 1
+		margin-bottom 91px
+	@media (min-width 1561px)
+		margin-bottom 110px
 	
+.main-navigation
+	@media (min-width 1561px)
+		align-self: flex-end
 .list-games
 	margin: 0
 	padding: 0;
@@ -103,21 +190,35 @@
 	flex-direction: row
 	justify-content: space-around
 	flex-wrap: wrap
-	margin-bottom 20px
-	@media (min-width 768px)
-		// justify-content: space-between
+	margin-bottom 15px
+	@media (min-width 450px)
 		flex-wrap: nowrap
+	@media (min-width 768px)
+		justify-content: space-between
+		margin-bottom 113px
+	@media (min-width 1561px)
+		margin-bottom 182px
 	
 .item-game
 	list-style: none
 	flex-basis: 30%
 	text-align: center
-	&:nth-child(4)
-	&:nth-child(5)
-		flex-grow: 2
+	// &:nth-child(4)
+	// &:nth-child(5)
+	// 	flex-grow: 2
+	@media (min-width 1561px)
+		min-width: 90px
+		margin-right: 25px
+		text-align left
+		&:last-child
+			margin-right: 0px
 	.link
 		color: $color-item-game
 		text-decoration: none
 		text-transform: uppercase
 		font-size: 12px
-		line-height: 18px;
+		line-height: 20px;
+		@media (min-width 768px)
+			font-size: 16px
+		@media (min-width 1561px)
+			font-size: 14px

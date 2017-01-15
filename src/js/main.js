@@ -3,6 +3,7 @@
 
 
 
+
 // чтобы работало, когда DOM загружен. Document Ready
 $(function(){
 	//       // = ./parts/sliders.js
