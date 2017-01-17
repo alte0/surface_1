@@ -2,37 +2,47 @@ extends templates/layout
 //- не забыть про отступ
 block content
 	section.athlets
-	.container
-		h2.title Athlets
-		.feature-column
-			h3.feature-column__title Connection
-			p.feature-column__text Connect with coaches directly, you can ping coaches to view profile.
-	.feature-column.feature-column--darkish-white
 		.container
-			h3.feature-column__title Collaboration
-			p.feature-column__text
-				| Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.
-	.feature-column.feature-column--purple
-		.container
-			h3.feature-column__title Growth
-			p.feature-column__text
-				| Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc.
+			.wrap-section-title
+				h2.section-title Athlets
+		.wrap-feature-column
+			.container
+				.feature-column
+					h3.feature-column__title Connection
+					p.feature-column__text Connect with coaches directly, you can ping coaches to view profile.
+		.wrap-feature-column.wrap-feature-column--darkish-white
+			.container
+				.feature-column
+						h3.feature-column__title Collaboration
+						p.feature-column__text
+							| Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.
+		.wrap-feature-column.wrap-feature-column--purple
+			.container
+				.feature-column
+						h3.feature-column__title Growth
+						p.feature-column__text
+							| Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc.
 	// end athlets
 	section.players
 		.container
-			h2.title Players
-			.feature-column
-				h3.feature-column__title Connection
-				p.feature-column__text
-					| Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.
-		.feature-column.feature-column--darkish-white
+			.wrap-section-title
+				h2.section-title Players
+		.wrap-feature-column
 			.container
-				h3.feature-column__title Collaboration
-				p.feature-column__text Work with recruiter to increase your chances of findingtalented athlete.
-		.feature-column.feature-column--purple
+				.feature-column
+					h3.feature-column__title Connection
+					p.feature-column__text
+						| Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.
+		.wrap-feature-column.wrap-feature-column--darkish-white
 			.container
-				h3.feature-column__title Growth
-				p.feature-column__text Save your time, recruit proper athlets for your team.
+				.feature-column
+						h3.feature-column__title Collaboration
+						p.feature-column__text Work with recruiter to increase your chances of findingtalented athlete.
+		.wrap-feature-column.wrap-feature-column--purple
+			.container
+				.feature-column
+						h3.feature-column__title Growth
+						p.feature-column__text Save your time, recruit proper athlets for your team.
 	// end players
 	section.be-active
 		.wraper-img

@@ -1,0 +1,81 @@
+.athlets
+	position relative
+.athlets:before
+	position absolute
+	content ''
+	top 45px
+	left 50%
+	transform translateX(-95%)
+	background-repeat no-repeat
+	width 213px
+	height 281px
+	background-image url('../img/footballer-mobile.png')
+	@media (min-width 768px)
+		top 73px
+		left 40%
+		width 497px
+		height 720px
+		background-image url('../img/footballer-tablet.png')
+	@media (min-width 1561px)
+		top 45px
+		width 695px
+		height 950px
+		background-image url('../img/footballer-desktop.png')
+	
+.athlets .wrap-section-title
+.athlets .feature-column
+	@media (min-width 768px)
+		padding-left 36%
+	@media (min-width 1561px)
+		padding-left 60%
+.wrap-section-title
+	@media (min-width 768px)
+		padding-top 72px
+	@media (min-width 1561px)
+		padding-top 102px
+		margin-bottom 18px
+
+.section-title
+	color #e7e7e7
+	@media (min-width 768px)
+		font-size 85px
+		line-height 85px
+		
+.section-title
+.feature-column__title
+	text-transform uppercase
+	margin 0
+	
+.wrap-feature-column
+	&--darkish-white
+		background-color rgba(0, 0, 0, .06)
+		.feature-column
+			@media (min-width 768px)
+				padding-top 36px
+				padding-bottom 34px
+	&--purple
+		background-color #5e3db3
+		.feature-column
+			padding-top 88px
+			padding-bottom 100px
+			@media (min-width 768px)
+				padding-top 36px
+				padding-bottom 31px
+		
+.feature-column
+	padding-top 58px
+	padding-bottom 60px
+	@media (min-width 768px)
+		padding-top 43px
+		padding-bottom 41px
+	&__title
+		color #c1c1c1
+		margin-bottom 18px
+		@media (min-width 768px)
+			font-size 36px
+			line-height 36px
+	&__text
+		margin 0
+		@media (min-width 768px)
+			font-size 20px
+			line-height 28px
