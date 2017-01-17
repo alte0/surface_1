@@ -1,0 +1,170 @@
+.page-footer
+	color white
+	padding-top 228px
+	background  url('../img/bg-footer.jpg') center top / cover no-repeat $bg-color-header
+	@media (min-width 768px)
+		padding-top 339px
+	@media (min-width 1561px)
+		padding-top 237px
+	.wraper-buttons
+		padding-top 71px
+		margin-bottom 183px
+		@media (min-width 768px)
+			padding-top 194px
+			margin-bottom 221px
+		@media (min-width 768px)
+			padding-top 194px
+		@media (min-width 1561px)
+			padding-top 158px
+			margin-bottom 291px
+
+.call-to-action
+	font-size 33px
+	line-height 33px
+	text-align center
+	margin 0
+	margin-bottom 5px
+	text-transform uppercase
+	@media (min-width 768px)
+		font-size 75px
+		line-height 75px
+		margin-bottom 16px
+		@media (min-width 1561px)
+			font-size 85px
+			line-height 85px
+			margin-bottom 3px
+	&__small
+		text-align center
+		text-transform uppercase
+		font-size 15px
+		line-height 15px
+		margin 0
+		color #a494cb
+		@media (min-width 768px)
+			font-size 34px
+			line-height 34px
+			
+.wrap-call-to-action
+	position relative
+	z-index 0
+	&:before
+		position absolute
+		content ""
+		@media (max-width 1560px)
+			margin auto
+			left 0
+			right 0
+		@media (min-width 320px)
+			top -131px
+			background: url("../img/sprite.png") 0 -54px;
+			width: 73px;
+			height: 78px;
+		@media (min-width 768px)
+			top -211px
+			background: url("../img/sprite.png") 0 -132px;
+			height: 137px;
+			width: 130px;
+		@media (min-width 1561px)
+			margin-left: 220px;
+			top -8px
+			left 0		
+	&:after
+		position absolute
+		content ""
+		top -30px
+		left 0
+		right 0
+		margin auto
+		width 227px
+		height 124px
+		z-index -1
+		background  url('../img/bg-footer2-mobile.png') no-repeat
+		@media (min-width 768px)
+			top -86px
+			left 14px
+			width 562px
+			height 314px
+			background url('../img/bg-footer2.png') no-repeat
+		@media (min-width 1561px)
+			left 0
+			top -105px
+
+
+	
+.footer-bottom
+	background-color: rgba(10, 12, 53, 0.6)
+	padding 14px 0
+	margin-top: -56px;
+	@media (min-width 768px)
+		padding 31px 0
+		margin-top: -94px;
+	@media (min-width 1561px)
+		padding 68px 0
+	.link
+		color white
+	.container
+		display flex
+		flex-direction row
+		justify-content center
+		@media (min-width 1561px)
+			justify-content space-between
+			
+		
+.logo-footer
+.wrapper-Contacts-and-Terms
+	display none
+	@media (min-width 1561px)
+		display block
+		
+.social-btns
+	.link
+		position relative
+		font-size 0
+		display inline-block
+		height 18px
+		width 18px
+		@media (min-width 768px)
+			height: 27px;
+			width: 27px;
+	.link__fb:before
+	.link__tw:before
+	.link__inst:before
+		position absolute
+		content ""
+		height 18px
+		width 18px
+		top 0
+		bottom 0
+		left 0
+		margin auto
+		@media (min-width 768px)
+			height: 27px;
+			width: 27px;
+	.link__fb
+		margin-right 41px
+		width 12px
+		@media (min-width 768px)
+			width: 14px;
+	.link__fb:before
+		background: url("../img/sprite.png") 0 -269px;
+		width 12px
+		@media (min-width 768px)
+			background: url("../img/sprite.png") 0 -287px;
+			width: 14px;
+	.link__tw
+		margin-right 38px
+	.link__tw:before
+		background: url("../img/sprite.png") 0 -412px;
+		height 15px
+		@media (min-width 768px)
+			background: url("../img/sprite.png") 0 -427px;
+			height: 22px;
+	.link__inst:before
+		background: url("../img/sprite.png") 0 -371px;
+		@media (min-width 768px)
+			background: url("../img/sprite.png") 0 -388px;
+			width: 23px;
+			height: 24px;
+		
+.separator
+	padding 0 9px

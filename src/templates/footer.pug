@@ -1,7 +1,8 @@
 footer.page-footer
 			.container
-				h2.call-to-action Download app
-				h3.call-to-action.call-to-action__small Show everyone what you can do!
+				.wrap-call-to-action
+					h2.call-to-action Download app
+					h3.call-to-action__small Show everyone what you can do!
 				.wraper-buttons
 					a.btn-download-app.btn-download-app__apple(href='#')
 						span Download on the
@@ -13,15 +14,15 @@ footer.page-footer
 						span.text-semibold Google Play
 			.footer-bottom
 				.container
-					picture.logo
+					picture.logo.logo-footer
 						source(media='(min-width: 768px)', srcset='img/logo.png')
 						img.logo(src='img/logo-mobile.png', alt='SURFACE 1')
 					.social-btns
-						a.link.link__fb(href='#') Facebook
-						a.link.link__tw(href='#') Twitter
-						a.link.link__inst(href='#') Instagram
+						a.link.link__fb(href='#' target='_blank') Facebook
+						a.link.link__tw(href='#' target='_blank') Twitter
+						a.link.link__inst(href='#' target='_blank') Instagram
 					.wrapper-Contacts-and-Terms
 						a.link(href='#') Contacts Us
-						span  
+						span.separator l
 						a.link(href='#') Terms & Conditions
 // end page-footer

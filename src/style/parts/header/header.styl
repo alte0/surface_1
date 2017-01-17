@@ -1,15 +1,9 @@
 .page-header
 	color: white
-	background  url('../img/bg-header-middle-mobile.png') 48% 44% / auto no-repeat,
-							url('../img/bg-header.jpg') center top / cover no-repeat $bg-color-header
+	background  url('../img/bg-header.jpg') center top / cover no-repeat $bg-color-header
 	padding-top 39px
 	@media (min-width 768px)
 		padding-top 52px
-		background  url('../img/bg-header-middle-tablet.png') 50% 35% / auto no-repeat,
-								url('../img/bg-header.jpg') center top / cover no-repeat $bg-color-header
-	@media (min-width 1561px)
-		background  url('../img/bg-header-middle-tablet.png') 35% 46% / auto no-repeat,
-								url('../img/bg-header.jpg') center top / cover no-repeat $bg-color-header
 	.container
 		display: flex
 		flex-direction: column
@@ -44,6 +38,7 @@
 	flex-direction column
 	margin-bottom 111px
 	position relative
+	z-index 0
 	@media (min-width 540px)
 		// width: 70%
 		margin-left auto
@@ -58,6 +53,23 @@
 		// width: 100%
 		width: 100%
 		margin-bottom: 15px;
+	&:after
+		position absolute
+		content ''
+		top -25px
+		left 0
+		right 0
+		margin auto
+		z-index -1
+		width 142px
+		height 177px
+		background  url('../img/bg-header-middle-mobile.png') no-repeat
+		@media (min-width 768px)
+			top -35px
+			width 254px
+			height 317px
+			background  url('../img/bg-header-middle-tablet.png') no-repeat
+		
 	&__text
 		margin: 0px
 		font-size: 30px
@@ -215,7 +227,6 @@
 			margin-right: 0px
 	.link
 		color: $color-item-game
-		text-decoration: none
 		text-transform: uppercase
 		font-size: 12px
 		line-height: 20px;
@@ -223,3 +234,5 @@
 			font-size: 16px
 		@media (min-width 1561px)
 			font-size: 14px
+.link
+	text-decoration: none
