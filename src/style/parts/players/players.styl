@@ -4,3 +4,69 @@
 		padding-right 40%
 	@media (min-width 1561px)
 		padding-right 60%
+
+.players
+	position relative
+.players:before
+	position absolute
+	content ''
+	top 45px
+	right 50%
+	background-repeat no-repeat
+	width 302px
+	height 252px
+	background-image url('../img/player-mobile.png')
+	z-index 1
+	@media (max-width 767px)
+		transform translateX(50%)
+	@media (min-width 768px)
+		top 37px
+		right 0%
+		width 690px
+		height 565px
+		background-image url('../img/player-tablet.png')
+		background-position-x 250px
+	@media (min-width 960px)
+		right 0%
+	@media (min-width 1561px)
+		top -31px
+		right 6.5%
+		width 991px
+		height 815px
+		background-image url('../img/player-desktop.png')
+		background-position-x 0px
+		
+.players
+	.feature-column
+		padding-top 58px
+		padding-bottom 60px
+		@media (min-width 768px)
+			padding-top 41px
+			padding-bottom 13px
+		@media (min-width 1561px)
+			padding-top 60px
+			padding-bottom 68px
+.players .wrap-feature-column
+	&--darkish-white
+		.feature-column
+			@media (min-width 768px)
+				padding-top 57px
+				padding-bottom 69px
+			@media (min-width 1561px)
+				padding-top 59px
+				padding-bottom 78px
+	&--purple
+		.feature-column
+			padding-top 88px
+			padding-bottom 100px
+			@media (min-width 768px)
+				padding-top 48px
+				padding-bottom 47px
+			@media (min-width 1561px)
+				padding-top 94px
+				padding-bottom 92px
+.slick-slider 
+	.wrap-feature-column
+		&--purple .feature-column
+			padding-top 73px
+			padding-bottom 67px

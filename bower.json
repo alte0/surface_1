@@ -1,12 +1,12 @@
 {
-  "name": "",
-  "description": "",
-  "main": "index.js",
+  "name": "surface_1",
+  "description": "surface_1",
+  "main": "",
   "authors": [
-    "Alte0"
+    "alte0"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/alte0/surface_1",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -14,8 +14,9 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-  },
   "devDependencies": {
-  }
+    "slick-carousel": "^1.6.0",
+    "matchHeight": "matchheight#^0.7.0"
+  },
+  "private": true
 }
