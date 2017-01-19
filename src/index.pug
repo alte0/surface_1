@@ -49,30 +49,33 @@ block content
 	section.be-active
 		.wraper-img
 			picture
+				source(media='(max-width: 320px)', srcset='img/photo-be_active-mobile.jpg')
 				source(media='(min-width: 1561px)', srcset='img/photo-be_active-desktop.jpg')
 				img(src='img/photo-be_active-tablet.jpg', alt='Be active')
-		.be-active__text
-			.container
+		.section-desc.be-active__text
+			.container.container--width.container--width__left
 				h3.section-title Be active
 				p.section-paragraph  Post videos with your skills, Like and follow others to be more popular.
 	// end Be active
 	section.find-contact
 		.wraper-img
 			picture
+				source(media='(max-width: 320px)', srcset='img/photo-find_contact-mobile.jpg')
 				source(media='(min-width: 1561px)', srcset='img/photo-find_contact-desktop.jpg')
 				img(src='img/photo-find_contact-tablet.jpg', alt='Find contact')
-		.find-contact__text
-			.container
+		.section-desc.find-contact__text
+			.container.container--width.container--width__right
 				h3.section-title Find contact
 				p.section-paragraph Contact others to find right coach or athlete you are looking for.
 	// end Find contact
 	section.work-it
 		.wraper-img
 			picture
+				source(media='(max-width: 320px)', srcset='img/photo-work_it-mobile.jpg')
 				source(media='(min-width: 1561px)', srcset='img/photo-work_it-desktop.jpg')
 				img(src='img/photo-work_it-tablet.jpg', alt='Work it')
-		.work-it__text
-			.container
+		.section-desc.work-it__text
+			.container.container--width.container--width__left
 				h3.section-title Work it
 				p.section-paragraph
 					| Enjoy being a student athelete, the recruiting process can be overwheelming, we want to make this a enjoyable
